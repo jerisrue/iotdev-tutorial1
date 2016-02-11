@@ -24,6 +24,9 @@
         },
         "cordova-plugin-contacts": {
             "PACKAGE_NAME": "com.jeris.workshop"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.jeris.workshop"
         }
     },
     "dependent_plugins": {}
