@@ -18,6 +18,9 @@
         },
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.jeris.workshop"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.jeris.workshop"
         }
     },
     "dependent_plugins": {}
