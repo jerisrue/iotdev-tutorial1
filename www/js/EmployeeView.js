@@ -8,8 +8,8 @@ var EmployeeView = function(employee) {
   };
 
   this.addLocation = function(event) {
-	event.preventDefault();
-	navigator.geolocation.getCurrentPosition(
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(
       function(position) {
           alert(position.coords.latitude + ',' + position.coords.longitude);
       },
@@ -37,18 +37,18 @@ var EmployeeView = function(employee) {
   };
 
   this.changePicture = function(event) {
-  	event.preventDefault();
-  	if (!navigator.camera) {
+    event.preventDefault();
+    if (!navigator.camera) {
       alert("Camera API not supported", "Error");
       return;
-  	}
-  	var options =   {   quality: 50,
-                      	destinationType: Camera.DestinationType.DATA_URL,
-                      	sourceType: 1,      // 0:Photo Library, 1=Camera, 2=Saved Album
-                      	encodingType: 0     // 0=JPG 1=PNG
-                  	};
+    }
+    var options =   {   quality: 50,
+                        destinationType: Camera.DestinationType.DATA_URL,
+                        sourceType: 1,      // 0:Photo Library, 1=Camera, 2=Saved Album
+                        encodingType: 0     // 0=JPG 1=PNG
+                    };
 
-  	navigator.camera.getPicture(
+    navigator.camera.getPicture(
       function(imgData) {
           $('.media-object', this.$el).attr('src', "data:image/jpeg;base64,"+imgData);
       },
@@ -57,7 +57,7 @@ var EmployeeView = function(employee) {
       },
       options);
 
-  	return false;
+    return false;
   };
 
   this.render = function() {
