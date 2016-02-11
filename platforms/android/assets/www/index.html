@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link href="assets/ratchet/css/ratchet.css" rel="stylesheet">
-	<link href="assets/css/styles.css" rel="stylesheet">
-	<link href="assets/css/pageslider.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/pageslider.css" rel="stylesheet">
 </head>
 <body>
 
 <script id="home-tpl" type="text/template">
-	<header class="bar bar-nav">
+    <header class="bar bar-nav">
         <h1 class="title">Directory</h1>
     </header>
     <div class="bar bar-standard bar-header-secondary">
         <input class='search-key' type="search"/>
     </div>
     <div class="content"></div>
-    <!--<div id="advert"></div>-->
+    {{!--<div id="advert"></div>--}}
 </script>
 
 <script id="employee-list-tpl" type="text/template">
@@ -91,10 +91,19 @@
                   </li>
                   <li class="table-view-cell media">
                     <a hre="#" class="push-right add-location-btn">
-						<span class="media-object pull-	left"></span>
-						<div class="media-body">
-							Add location
-						</div>
+                        <span class="media-object pull- left"></span>
+                        <div class="media-body">
+                            Add location
+                        </div>
+                    </a>
+                  </li>
+
+                  <li class="table-view-cell media">
+                    <a hre="#" class="push-right add-contact-btn">
+                        <span class="media-object pull-left"></span>
+                        <div class="media-body">
+                            Add to contacts
+                        </div>
                     </a>
                   </li>
 
